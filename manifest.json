@@ -1,0 +1,35 @@
+{
+  "browser_specific_settings": {
+    "gecko": {
+      "strict_min_version": "58.0a1"
+    }
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "commands": {
+    "copy-highlighted-tabs": {
+      "suggested_key": {
+	"default": "Alt+C"
+      },
+      "description": "Copy markdown links to selected tabs to clipboard"
+    },
+    "copy-window-tabs": {
+      "suggested_key": {
+	"default": "Shift+Alt+C"
+      },
+      "description": "Copy markdown links to window tabs to clipboard"
+    }
+  },
+
+  "description": "Copy (highlighted/window) tabs as markdown links, with keybindings",
+  "homepage_url": "https://github.com/edrex/copy-tabs-as-markdown",
+  "manifest_version": 2,
+  "name": "webextension emitter testbed",
+  "permissions": [
+    "tabs",
+    "clipboardWrite",
+    "notifications"
+   ],
+  "version": "1.0"
+}
